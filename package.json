@@ -1,0 +1,26 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Rest api",
+  "main": "index.js",
+  "repository": "https://github.com/jongschneider/restapi.git",
+  "scripts": {
+    "dev:build": "webpack -w",
+    "dev": "cross-env NODE_ENV=development nodemon dist/index.bundle.js"
+  },
+  "author": "Jonathan Schneider",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "cross-env": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.6.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
